@@ -51,15 +51,15 @@ export default function Products() {
 
     return (
         <>
+                <div className="row container m-auto mt-5">
+                    <h1 className='text-center text-white'>Products</h1>
+                    {allProducts.map((product) => (
             <motion.ul
                 className="container"
                 variants={item}
                 initial="hidden"
                 animate="visible"
             >
-                <div className="row container m-auto mt-5">
-                    <h1 className='text-center text-white'>Products</h1>
-                    {allProducts.map((product) => (
                         <motion.div key={product.id} className="col-sm-12 col-md-6 col-lg-4 mb-4"
 
                             variants={container}
@@ -74,9 +74,9 @@ export default function Products() {
                                 </div>
                             </motion.div>
                         </motion.div>
+                    </motion.ul>
                     ))}
                 </div>
-            </motion.ul>
 
         </>
     );
