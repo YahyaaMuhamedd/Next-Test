@@ -18,7 +18,7 @@ export default function Slider() {
 
     return (
         <>
-            <div className="container">
+            <div className="container " >
 
                 <Swiper
                     // install Swiper modules
@@ -33,10 +33,10 @@ export default function Slider() {
 className='mt-1 h-75vh w-100'
                 >
 
-                    <SwiperSlide><Image src={logo.src} alt="asda" width={1200} height={500} /></SwiperSlide>
-                    <SwiperSlide><Image src={logo1.src} alt="asda" width={1200} height={500} /></SwiperSlide>
-                    <SwiperSlide><Image src={logo2.src} alt="asda" width={1200} height={500} /></SwiperSlide>
-                    <SwiperSlide><Image src={logo.src} alt="asda" width={1200} height={500} /></SwiperSlide>
+                    <SwiperSlide><Image src={logo.src} alt="asda" width={1200} height={500}  className='slide-img'/></SwiperSlide>
+                    <SwiperSlide><Image src={logo1.src} alt="asda" width={1200} height={500} className='slide-img' /></SwiperSlide>
+                    <SwiperSlide><Image src={logo2.src} alt="asda" width={1200} height={500} className='slide-img' /></SwiperSlide>
+                    <SwiperSlide><Image src={logo.src} alt="asda" width={1200} height={500}  className='slide-img'/></SwiperSlide>
 
 
                 </Swiper>
