@@ -33,10 +33,10 @@ export default function Slider() {
 className='mt-1 h-75vh'
                 >
 
-                    <SwiperSlide><Image src={logo.src} alt="asda" width={1160} height={500} /></SwiperSlide>
-                    <SwiperSlide><Image src={logo1.src} alt="asda" width={1160} height={500} /></SwiperSlide>
-                    <SwiperSlide><Image src={logo2.src} alt="asda" width={1160} height={500} /></SwiperSlide>
-                    <SwiperSlide><Image src={logo.src} alt="asda" width={1160} height={500} /></SwiperSlide>
+                    <SwiperSlide><Image src={logo.src} alt="asda" width={1200} height={500} /></SwiperSlide>
+                    <SwiperSlide><Image src={logo1.src} alt="asda" width={1200} height={500} /></SwiperSlide>
+                    <SwiperSlide><Image src={logo2.src} alt="asda" width={1200} height={500} /></SwiperSlide>
+                    <SwiperSlide><Image src={logo.src} alt="asda" width={1200} height={500} /></SwiperSlide>
 
 
                 </Swiper>
