@@ -59,6 +59,7 @@ export default function Products() {
                 variants={item}
                 initial="hidden"
                 animate="visible"
+                key={index}
             >
                         <motion.div key={product.id} className="col-sm-12 col-md-6 col-lg-4 mb-4"
 
