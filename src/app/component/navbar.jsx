@@ -1,9 +1,11 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Link from 'next/link';
 
 
+
 const Navbar = () => {
+    useEffect(() => {
     window.onscroll = function () {
         if (window.scrollY >= 75) {
             document.querySelector('.main-nav').classList.add('sticky-tops');
@@ -14,6 +16,8 @@ const Navbar = () => {
 
         }
     }
+    }, [])
+    
 
     return (
         <div className='main-nav'>
@@ -47,10 +51,7 @@ const Navbar = () => {
                                 </Link>
                             </li>
                         </ul>
-                        {/* <form classNameName="d-flex">
-        <input classNameName="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button classNameName="btn btn-outline-success" type="submit">Search</button>
-      </form> */}
+         
                     </div>
                 </div>
             </nav>

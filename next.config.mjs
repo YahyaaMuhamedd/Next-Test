@@ -1,10 +1,6 @@
 /** @type {import('next').NextConfig} */
-
-export default {
-    experimental: {
-      appDir: true,
-    },
-    images: { unoptimized: true } 
-  };
-  
-
+module.exports = {
+  experimental: {
+    // Remove any invalid or deprecated keys here
+  },
+};
