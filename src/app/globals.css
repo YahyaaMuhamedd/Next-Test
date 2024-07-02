@@ -1,0 +1,77 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  background-color: #101a4b !important;
+}
+
+.main-nav {
+  background-color: #020617 !important; 
+  width: 100%;
+  position: relative ;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.sticky-tops {
+  position: sticky !important;
+  width: 100%;
+  transition: 0.8s ease-in-out;
+  animation: yaya 0.8s;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  height: auto;
+}
+
+.navs li {
+  /* margin-bottom: 25px; */
+
+  /* &:hover {
+    background-color: #928b8b;
+    color: aqua;
+  } */
+
+  a {
+    color: white !important;
+
+  }
+
+}
+
+
+.neon-button {
+  position: relative;
+  width: 120px;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #020617;
+  border: 2px solid #0ff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border-color 0.8s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.neon-button:hover {
+  border-color: transparent;
+  box-shadow: 0 0 15px #0ff, 0 0 30px #0ff, 0 0 45px #0ff;
+}
+
+
+
+@keyframes yaya {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
