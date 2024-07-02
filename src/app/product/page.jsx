@@ -53,7 +53,7 @@ export default function Products() {
         <>
                 <div className="row container m-auto mt-5">
                     <h1 className='text-center text-white'>Products</h1>
-                    {allProducts.map((product) => (
+                    {allProducts.map((product ,index) => (
             <motion.ul
                 className="container"
                 variants={item}
