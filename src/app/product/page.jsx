@@ -56,7 +56,7 @@ export default function Products() {
                         variants={item}
                         initial="hidden"
                         animate="visible"
-                        key={index}
+                       
                         
                     >
                 <div className="row container m-auto mt-5">
