@@ -17,7 +17,7 @@ const Navbar = () => {
         }
     }
     }, [])
-    
+
 
     return (
         <div className='main-nav'>
@@ -35,18 +35,18 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href="/about" className='nav-link neon-button'>
+                                <Link href="about" className='nav-link neon-button'>
                                     About
                                 </Link>
                             </li>
                          
                             <li className="nav-item">
-                                <Link href="/product" className='nav-link neon-button'>
+                                <Link href="product" className='nav-link neon-button'>
                                     Product
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href="/contact" className='nav-link neon-button'>
+                                <Link href="contact" className='nav-link neon-button'>
                                     Contact Us
                                 </Link>
                             </li>
