@@ -30,7 +30,7 @@ export default function Slider() {
                     scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
-className='mt-1 h-75vh'
+className='mt-1 h-75vh w-100'
                 >
 
                     <SwiperSlide><Image src={logo.src} alt="asda" width={1200} height={500} /></SwiperSlide>
