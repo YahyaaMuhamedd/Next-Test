@@ -3,16 +3,18 @@ import Link from 'next/link';
 import React from 'react';
 
 
-export const metadata = {
-    title: `Product Number ${id}`,
-
-}
 
 
 async function fetchProduct(id) {
     const res = await fetch(`https://fakestoreapi.com/products/${id}`);
     return res.json();
 }
+export async function generateMetadata({ params }) {
+    const { productId } = params;
+    return {
+      title: `Product Number ${productId}`,
+    };
+  }
 
 export default async function ProductPage({ params }) {
     const product = await fetchProduct(params.id);
