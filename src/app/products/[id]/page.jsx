@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -9,12 +10,12 @@ async function fetchProduct(id) {
     const res = await fetch(`https://fakestoreapi.com/products/${id}`);
     return res.json();
 }
-export async function generateMetadata({ params }) {
-    const { productId } = params;
+export async function generateMetadata({ params  }) {
+    
     return {
-      title: `Product Number ${productId}`,
+        title: `Product Number ${params.id}`,
     };
-  }
+}
 
 export default async function ProductPage({ params }) {
     const product = await fetchProduct(params.id);
