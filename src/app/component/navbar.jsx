@@ -6,6 +6,9 @@ import Link from 'next/link';
 
 const Navbar = () => {
     useEffect(() => {
+        import('bootstrap/dist/js/bootstrap.bundle.min.js');
+      }, []);
+    useEffect(() => {
     window.onscroll = function () {
         if (window.scrollY >= 75) {
             document.querySelector('.main-nav').classList.add('sticky-tops');
