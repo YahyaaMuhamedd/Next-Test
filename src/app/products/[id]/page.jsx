@@ -3,6 +3,12 @@ import Link from 'next/link';
 import React from 'react';
 
 
+export const metadata = {
+    title: `Product Number ${id}`,
+
+}
+
+
 async function fetchProduct(id) {
     const res = await fetch(`https://fakestoreapi.com/products/${id}`);
     return res.json();
